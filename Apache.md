@@ -224,10 +224,10 @@ Para comprobar si nuestra página web es accesible solo nos queda introducir el 
 Y con este paso podemos dar por concluída la configuración de nuestro servidor.
 &nbsp;
 ## Bibliografía
-[Qué es Apache](https://cwiki.apache.org/confluence/display/HTTPD/FAQ#FAQ-WhatisApache?)
-[Manual Apache](https://httpd.apache.org/docs/2.4/es/)
-[Instalar Apache](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es)
-[Tutorial Instalación Apache para Ubuntu](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview)
-[Qué son y cómo configurar los VirtualHosts en Apache](https://www.desarrollolibre.net/blog/apache/que-son-y-como-emplear-los-virtualhost-en-apache)
+[Qué es Apache](https://cwiki.apache.org/confluence/display/HTTPD/FAQ#FAQ-WhatisApache?)  
+[Manual Apache](https://httpd.apache.org/docs/2.4/es/)  
+[Instalar Apache](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es)  
+[Tutorial Instalación Apache para Ubuntu](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview)  
+[Qué son y cómo configurar los VirtualHosts en Apache](https://www.desarrollolibre.net/blog/apache/que-son-y-como-emplear-los-virtualhost-en-apache)  
 
 
