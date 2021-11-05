@@ -2,7 +2,7 @@
 *Ernest Valentin Faulhaber*
 ## Resumen
 
-Proyecto dentro de la asignatura de Despliegue de Aplicaciones Web de 2º DAW en el que documentamos paso a paso el proceso de instalación y configuración de Apache en una máquina Ubuntu. Mediante este trabajo vamos a aprender la instrucciones de instalación de Apache, sus comandos de administración, y por último cómo crear y administrar nuestra página Web de tal manera que esta sea accesible a través de un dominio.
+Proyecto dentro de la asignatura de Despliegue de Aplicaciones Web de 2º DAW en el que documentamos paso a paso el proceso de instalación y configuración de Apache en una máquina Ubuntu. Mediante este trabajo vamos a aprender cómo instalar Apache en nuestro equipo, los comandos de administración básicos y cómo crear y administrar nuestra página Web de tal manera que esta sea accesible a través de un dominio o una dirección IP.
 &nbsp;
 ## Palabras clave
 * Dirección Web
@@ -34,7 +34,8 @@ Proyecto dentro de la asignatura de Despliegue de Aplicaciones Web de 2º DAW en
 &nbsp;
 ## Introducción a Appache  
 ### Contexto
-Este proyecto sirve como documentación de la instalación de Apache en una máquina Ubuntu (Linux) dentro de la asignatura de Despliegue de Aplicaciones Web de 2º DAW, Ágil Centros.
+Este proyecto sirve como documentación de la instalación de Apache en una máquina Ubuntu (Linux) dentro de la asignatura de Despliegue de Aplicaciones Web de 2º DAW, Ágil Centros.  
+  
 Para llevar a cabo la instalación vamos a necesitar:
 * Equipo con Ubuntu instalado (Versión 16.04 LTS o superior)
 * Conocimientos básicos de líneas de comandos Linux
@@ -46,7 +47,9 @@ Los objetivos de este proyecto son:
 * Tener unos apuntes de repaso fáciles de seguir a la hora de reutilizar Apache en el futuro
 &nbsp;
 ## Instalar Apache en Ubuntu
-Para asegurarnos de que vamos a instalar la última versión disponible de Apache necesitamos primero realizar una **actualización de la librería de paquetes** de Ubuntu. Para ello vamos a ejecutar la siguiente petición en el terminal de instrucciones:
+Para asegurarnos de que vamos a instalar la última versión disponible de Apache necesitamos primero realizar una **actualización de la librería de paquetes** de Ubuntu.  
+  
+Para ello vamos a ejecutar la siguiente petición en el terminal de instrucciones:
 ```
 sudo apt update
 ```
@@ -133,7 +136,7 @@ Cuyo contenido simplificado sería:
 También tenemos la posibilidad de **modificar la configuración de la Web por defecto**:
 
 &nbsp;  
-Los archivos de configuración de todas las páginas web de Apache se ubican en la carpeta **`/etc/apache2/sites-available/`** y podemos acceder a ella mediante la instrucción:
+Los archivos de configuración de todas las páginas web de Apache se ubican en la carpeta **`/etc/apache2/sites-available/`**, a la cual podemos acceder mediante la instrucción:
 ```
 cd /etc/apache2/sites-available
 ```
@@ -180,9 +183,9 @@ Cuyos contenidos los editamos siguiendo la estructura básica de un archivo HTML
 </html>
 ```
 ### Configurar el VirtualHost de nuestra Web
-Una vez creada la página es necesario crear el archivo VirtualHost que module el acceso a nuestra Web.
-&nbsp;
-Para ello tenemos que acceder de nuevo a la carpeta de los archivos de configuración de las páginas Web de apache **`/etc/apache2/sites-available/`** mediante:
+Una vez creada la página es necesario crear el archivo VirtualHost que module el acceso a nuestra Web.  
+&nbsp;  
+Para ello vamos a acceder a la carpeta de de configuración de sitios disponibles de Apache situada en **`/etc/apache2/sites-available/`**:
 ```
 cd /etc/apache2/sites-available/
 ```
@@ -204,7 +207,7 @@ Cuyo contenido editaremos siguiendo la estructura básica del archivo **`000-def
 </VirtualHost>
 ```
 ### Activación del VirtualHost
-Dado que de momento no disponemos de un dominio público, vamos a indicarle a nuestro sistema operativo que el dominio utilizado para nuestra página Web será resuelto por nuestra propia máquina. Para ello vamos a editar el archivo **`hosts`**, el cual se ubica dentro de la carpeta **`etc`**, mediante la instrucción:
+Dado que de momento no disponemos de un dominio público, vamos a indicarle a nuestro sistema operativo que el dominio utilizado para nuestra página Web será resuelto por nuestra propia máquina. Para ello vamos a editar el archivo **`hosts`**, el cual se ubica dentro de la carpeta **`etc`**:
 ```
 sudo gedit /etc/hosts
 ```
