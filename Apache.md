@@ -2,7 +2,7 @@
 *Ernest Valentin Faulhaber*
 ## Resumen
 
-Proyecto dentro de la asignatura de Despliegue de Aplicaciones Web de 2º DAW en el que documentamos paso a paso el proceso de instalación y configuración de Apache en una máquina Ubuntu. Mediante este trabajo vamos a aprender la instrucciones de instalación de Apache, sus comandos de administración y por último cómo crear y administrar nuestra página Web de tal manera que esta sea accesible a través de un dominio.
+Proyecto dentro de la asignatura de Despliegue de Aplicaciones Web de 2º DAW en el que documentamos paso a paso el proceso de instalación y configuración de Apache en una máquina Ubuntu. Mediante este trabajo vamos a aprender la instrucciones de instalación de Apache, sus comandos de administración, y por último cómo crear y administrar nuestra página Web de tal manera que esta sea accesible a través de un dominio.
 &nbsp;
 ## Palabras clave
 * Dirección Web
