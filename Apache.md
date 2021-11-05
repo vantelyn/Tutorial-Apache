@@ -128,8 +128,10 @@ Cuyo contenido simplificado sería:
   ...
 </body>
 </html>
-```
+```  
+&nbsp;  
 También tenemos la posibilidad de **modificar la configuración de la Web por defecto**:
+
 &nbsp;  
 Los archivos de configuración de todas las páginas web de Apache se ubican en la carpeta **`/etc/apache2/sites-available/`** y podemos acceder a ella mediante la instrucción:
 ```
@@ -141,8 +143,8 @@ sudo gedit 000-default.conf
 ```
 Cuyos contenidos simplificados serían:
 ```
-    # 127.0.0.1 es la dirección IP del servidor y :80 el puerto de acceso
-<VirtualHost 127.0.0.1:80>                      
+    # * indica el acceso mediante una dirección IP sin especificar y :80 el puerto de acceso
+<VirtualHost *:80>                      
     # ServerName especifica el nombre de dominio raiz de nuestra página web
     ServerName www.example.com           
     # ServerAlias permite introducir nombres de dominio adicionales
@@ -190,7 +192,8 @@ sudo gedit miweb.conf
 ```
 Cuyo contenido editaremos siguiendo la estructura básica del archivo **`000-default.conf`**:
 ```
-    # especificamos la dirección Web de nuestro servidor y el puerto de acceso
+    # especificamos la dirección IP y el puerto de acceso a nuestro servidor
+    # en el caso de un servidor de Red local tenemos que especificar la dirección IP de subred
 <VirtualHost 127.0.0.1:80>    
     # introducimos la dirección Web de nuestro dominio
     ServerName www.miweb.com         
