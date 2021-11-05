@@ -130,7 +130,7 @@ Cuyo contenido simplificado sería:
 </html>
 ```
 También tenemos la posibilidad de **modificar la configuración de la Web por defecto**:
-&nbsp;
+&nbsp;  
 Los archivos de configuración de todas las páginas web de Apache se ubican en la carpeta **`/etc/apache2/sites-available/`** y podemos acceder a ella mediante la instrucción:
 ```
 cd /etc/apache2/sites-available
